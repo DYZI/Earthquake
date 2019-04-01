@@ -4,7 +4,7 @@ author: "ZIDA"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{About earthquakr}
+  %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -227,3 +227,8 @@ quakes %>%
 Following the conclusion of the Coursera Specialization with the submission of this package, I will likely do very little additional development on this package.
 
 However, future plans for use of this package include making an R Shiny app with the `flexdashboard` package, and using this package as an underpinning for making interactive plots and timelines, and posting on my blog.
+
+# Links:
+* [Package earthquake GitHub](https://github.com/ZYDI/Earthquake)
+* [Package fars Travis CI](https://travis-ci.org/ZYDI/Earthquake)
+* [Package Appveyor](https://ci.appveyor.com/project/ZYDI/Earthquake)

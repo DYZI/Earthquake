@@ -1,10 +1,10 @@
 ---
-title: "earthquakr: Visualizing NOAA's Significant Earthquakes"
-author: "Tyler Byers"
+title: "earthquake: Visualizing NOAA's Significant Earthquakes"
+author: "ZIDA"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{About earthquakr}
+  %\VignetteIndexEntry{About earthquake}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,15 +14,15 @@ knitr::opts_chunk$set(fig.width = 6, fig.height = 5,
                       fig.align = 'center')
 ```
 
-The `earthquakr` package is a small R package for cleaning, timelining, and mapping [NOAA Significant Earthquake data](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This R package was built to satisfy the requirements of the Capstone project for the [Coursera](http://www.coursera.org) [Mastering Software Development in R](https://www.coursera.org/specializations/r) 5-course specialization.
+The `earthquake` package is a small R package for cleaning, timelining, and mapping [NOAA Significant Earthquake data](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This R package was built to satisfy the requirements of the Capstone project for the [Coursera](http://www.coursera.org) [Mastering Software Development in R](https://www.coursera.org/specializations/r) 5-course specialization.
 
-## Installing earthquakr
+## Installing earthquake
 
-To install the `earthquakr` package, the user must install the `devtools` package.  Then, to download and install the `earthquakr` package, use the following commands:
+To install the `earthquake` package, the user must install the `devtools` package.  Then, to download and install the `earthquake` package, use the following commands:
 
 ```{r eval=FALSE}
-devtools::install_github('tybyers/earthquakr')
-library(earthquakr)
+devtools::install_github('ZYDI/Earthquake')
+library(earthquake)
 ```
 
 ## Necessary Packages
@@ -30,7 +30,7 @@ library(earthquakr)
 To work through these examples, the following packages need to be installed and loaded:
 
 ```{r message = FALSE}
-library(earthquakr) 
+library(earthquake) 
 library(dplyr)
 library(ggplot2)
 library(readr)
@@ -39,16 +39,16 @@ library(lubridate)
 
 ## Loading Data
 
-The NOAA Significant Earthquake dataset, as it existed on April 1, 2017, is provided with this package, using the data set name `quakes`.  If you wish to use data updated after this date, please see the dataset documentation (`?earthquakr:quakes`) for source.
+The NOAA Significant Earthquake dataset, as it existed on April 1, 2017, is provided with this package, using the data set name `quakes`.  If you wish to use data updated after this date, please see the dataset documentation (`?earthquake:quakes`) for source.
 
 ### Load and Clean Package Data
 
-To load the `quakes` data, simply use the `earthquakr::quakes` command (the `earthquakr::` invocation is necessary because R comes loaded with another data set called `quakes`).
+To load the `quakes` data, simply use the `earthquake::quakes` command (the `earthquake::` invocation is necessary because R comes loaded with another data set called `quakes`).
 
 Then call the `eq_clean_data` and `eq_location` clean command to "clean" some of the variables in the data set for use with the visualization tools in this package.  The usage of these commands, plus the "tail" of the data set, are shown below.
 
 ```{r}
-quakes <- earthquakr::quakes # loads quakes data with data set
+quakes <- earthquake::quakes # loads quakes data with data set
 quakes <- quakes %>%
   eq_clean_data() %>%
   eq_location_clean()
@@ -69,7 +69,7 @@ tail(quakes)
 If you wish to use NOAA Significant Earthquake data updated after April 1, 2017, please visit the NOAA Significant Earthquakes site at  https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1 and download the data to your working directory. Then you may load and clean data for analysis using the following sequence of commands (replace `filename` with the location of your file):
 
 ```{r message = FALSE}
-filename <- system.file('extdata', 'earthquakes.txt', package = 'earthquakr')
+filename <- system.file('extdata', 'earthquakes.txt', package = 'earthquake')
 quakes_from_raw <- readr::read_delim(filename, delim = '\t')
 quakes_from_raw_clean <- quakes_from_raw %>%
   eq_clean_data() %>%

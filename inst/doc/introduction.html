@@ -10,9 +10,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="author" content="Tyler Byers" />
+<meta name="author" content="ZIDA" />
 
-<meta name="date" content="2017-04-29" />
+<meta name="date" content="2019-04-01" />
 
 <title>earthquakr: Visualizing NOAA’s Significant Earthquakes</title>
 
@@ -78,23 +78,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 
 
-<h1 class="title toc-ignore">earthquakr: Visualizing NOAA’s Significant Earthquakes</h1>
-<h4 class="author"><em>Tyler Byers</em></h4>
-<h4 class="date"><em>2017-04-29</em></h4>
+<h1 class="title toc-ignore">earthquake: Visualizing NOAA’s Significant Earthquakes</h1>
+<h4 class="author"><em>ZIDA</em></h4>
+<h4 class="date"><em>2019-04-01</em></h4>
 
 
 
-<p>The <code>earthquakr</code> package is a small R package for cleaning, timelining, and mapping <a href="https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1">NOAA Significant Earthquake data</a>. This R package was built to satisfy the requirements of the Capstone project for the <a href="http://www.coursera.org">Coursera</a> <a href="https://www.coursera.org/specializations/r">Mastering Software Development in R</a> 5-course specialization.</p>
-<div id="installing-earthquakr" class="section level2">
-<h2>Installing earthquakr</h2>
-<p>To install the <code>earthquakr</code> package, the user must install the <code>devtools</code> package. Then, to download and install the <code>earthquakr</code> package, use the following commands:</p>
+<p>The <code>earthquake</code> package is a small R package for cleaning, timelining, and mapping <a href="https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1">NOAA Significant Earthquake data</a>. This R package was built to satisfy the requirements of the Capstone project for the <a href="http://www.coursera.org">Coursera</a> <a href="https://www.coursera.org/specializations/r">Mastering Software Development in R</a> 5-course specialization.</p>
+<div id="installing-earthquake" class="section level2">
+<h2>Installing earthquake</h2>
+<p>To install the <code>earthquake</code> package, the user must install the <code>devtools</code> package. Then, to download and install the <code>earthquakr</code> package, use the following commands:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools::<span class="kw">install_github</span>(<span class="st">'tybyers/earthquakr'</span>)
-<span class="kw">library</span>(earthquakr)</code></pre></div>
+<span class="kw">library</span>(earthquake)</code></pre></div>
 </div>
 <div id="necessary-packages" class="section level2">
 <h2>Necessary Packages</h2>
 <p>To work through these examples, the following packages need to be installed and loaded:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(earthquakr) 
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(earthquake) 
 <span class="kw">library</span>(dplyr)
 <span class="kw">library</span>(ggplot2)
 <span class="kw">library</span>(readr)
@@ -102,12 +102,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="loading-data" class="section level2">
 <h2>Loading Data</h2>
-<p>The NOAA Significant Earthquake dataset, as it existed on April 1, 2017, is provided with this package, using the data set name <code>quakes</code>. If you wish to use data updated after this date, please see the dataset documentation (<code>?earthquakr:quakes</code>) for source.</p>
+<p>The NOAA Significant Earthquake dataset, as it existed on April 1, 2019, is provided with this package, using the data set name <code>quakes</code>. If you wish to use data updated after this date, please see the dataset documentation (<code>?earthquakr:quakes</code>) for source.</p>
 <div id="load-and-clean-package-data" class="section level3">
 <h3>Load and Clean Package Data</h3>
-<p>To load the <code>quakes</code> data, simply use the <code>earthquakr::quakes</code> command (the <code>earthquakr::</code> invocation is necessary because R comes loaded with another data set called <code>quakes</code>).</p>
+<p>To load the <code>quakes</code> data, simply use the <code>earthquake::quakes</code> command (the <code>earthquake::</code> invocation is necessary because R comes loaded with another data set called <code>quakes</code>).</p>
 <p>Then call the <code>eq_clean_data</code> and <code>eq_location</code> clean command to “clean” some of the variables in the data set for use with the visualization tools in this package. The usage of these commands, plus the “tail” of the data set, are shown below.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">quakes &lt;-<span class="st"> </span>earthquakr::quakes <span class="co"># loads quakes data with data set</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">quakes &lt;-<span class="st"> </span>earthquake::quakes <span class="co"># loads quakes data with data set</span>
 quakes &lt;-<span class="st"> </span>quakes %&gt;%
 <span class="st">  </span><span class="kw">eq_clean_data</span>() %&gt;%
 <span class="st">  </span><span class="kw">eq_location_clean</span>()
@@ -171,7 +171,7 @@ quakes &lt;-<span class="st"> </span>quakes %&gt;%
 </div>
 <div id="load-and-clean-downloaded-data" class="section level3">
 <h3>Load and Clean Downloaded Data</h3>
-<p>If you wish to use NOAA Significant Earthquake data updated after April 1, 2017, please visit the NOAA Significant Earthquakes site at <a href="https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1" class="uri">https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1</a> and download the data to your working directory. Then you may load and clean data for analysis using the following sequence of commands (replace <code>filename</code> with the location of your file):</p>
+<p>If you wish to use NOAA Significant Earthquake data updated after April 1, 2019, please visit the NOAA Significant Earthquakes site at <a href="https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1" class="uri">https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&amp;s=1&amp;d=1</a> and download the data to your working directory. Then you may load and clean data for analysis using the following sequence of commands (replace <code>filename</code> with the location of your file):</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filename &lt;-<span class="st"> </span><span class="kw">system.file</span>(<span class="st">'extdata'</span>, <span class="st">'earthquakes.txt'</span>, <span class="dt">package =</span> <span class="st">'earthquakr'</span>)
 quakes_from_raw &lt;-<span class="st"> </span>readr::<span class="kw">read_delim</span>(filename, <span class="dt">delim =</span> <span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)
 quakes_from_raw_clean &lt;-<span class="st"> </span>quakes_from_raw %&gt;%

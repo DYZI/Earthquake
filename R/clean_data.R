@@ -7,7 +7,7 @@
 #' obtained from NOAA's
 #' \href{https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1}{Significant
 #' EarthQuake Database}, or loaded into the envirnoment with \code{data(quakes)}
-#' (April 1, 2017 snapshot), and cleans it up for further analysis.  In
+#' (April 1, 2019 snapshot), and cleans it up for further analysis.  In
 #' particular, it creates a \code{DATE} feature by combing the \code{YEAR},
 #' \code{MONTH}, and \code{DAY} features, and makes sure the \code{LATITUDE} and
 #' \code{LONGITUDE} features are of type \code{numeric}.  Also converts the

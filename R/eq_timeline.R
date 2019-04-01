@@ -30,8 +30,7 @@
 #' @return A \code{ggplot2} object, showing the earthquake timeline.
 #'
 #' @export
-#'
-#' @examples
+#'#' @examples
 #' # An example with a single country and no labels, showing two
 #' # different classes of date* parameters being passed in.
 #' library(ggplot2); library(dplyr)

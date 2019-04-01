@@ -3,8 +3,8 @@ knitr::opts_chunk$set(fig.width = 6, fig.height = 5,
                       fig.align = 'center')
 
 ## ----eval=FALSE----------------------------------------------------------
-#  devtools::install_github('tybyers/earthquakr')
-#  library(earthquakr)
+#  devtools::install_github('ZYDI/Earthquake')
+#  library(earthquake)
 
 ## ----message = FALSE-----------------------------------------------------
 library(earthquakr) 
@@ -14,7 +14,7 @@ library(readr)
 library(lubridate)
 
 ## ------------------------------------------------------------------------
-quakes <- earthquakr::quakes # loads quakes data with data set
+quakes <- earthquake::quakes # loads quakes data with data set
 quakes <- quakes %>%
   eq_clean_data() %>%
   eq_location_clean()
@@ -25,7 +25,7 @@ quakes <- eq_load_clean_data()
 tail(quakes)
 
 ## ----message = FALSE-----------------------------------------------------
-filename <- system.file('extdata', 'earthquakes.txt', package = 'earthquakr')
+filename <- system.file('extdata', 'earthquakes.txt', package = 'earthquake')
 quakes_from_raw <- readr::read_delim(filename, delim = '\t')
 quakes_from_raw_clean <- quakes_from_raw %>%
   eq_clean_data() %>%

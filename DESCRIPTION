@@ -1,8 +1,8 @@
 Package: earthquake
+Title: "earthquake: Visualizing NOAA's Significant Earthquakes"
 Version: 0.1.0
 Authors@R: person('ZIDA', email = 'zidnazaire@yahoo.fr', role = c('aut', 'cre'))
 Depends: R (>= 3.5.0)
-License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

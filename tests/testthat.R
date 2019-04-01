@@ -1,4 +1,4 @@
 library(testthat)
-library(earthquakr)
+library(earthquake)
 
 test_check("earthquake")

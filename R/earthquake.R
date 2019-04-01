@@ -1,4 +1,4 @@
-#' earthquakr: A visualization package for world earthquake histories
+#' earthquake: A visualization package for world earthquake histories
 #'
 #' This package maps and timelines earthquakes.
 #'

@@ -20,7 +20,6 @@ To install this package to run on your system, please first install and load the
 devtools::install_github('c')
 library(earthquake)
 ```
-
 ### Vignette
 
 You may read the interactive vignette at my personal blog site, at: http://datawrangl.com/assets/earthquake-introduction.html.

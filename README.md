@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/DYZI/FARS.svg?branch=master)](https://travis-ci.com/DYZI/Earthquake)
 Travis
 
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/DYZI/FARS?branch=master&svg=true)](https://ci.appveyor.com/project/DYZI/Earthquake)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/DYZI/Earthquake?branch=master&svg=true)](https://ci.appveyor.com/project/DYZI/Earthquake)
  AppVeyor
 
 ## earthquakr R package

@@ -2,6 +2,7 @@ Package: earthquake
 Title: "earthquake: Visualizing NOAA's Significant Earthquakes"
 Version: 0.1.0
 Authors@R: person('ZIDA', email = 'zidnazaire@yahoo.fr', role = c('aut', 'cre'))
+License: GPL-3 + file LICENSE
 Depends: R (>= 3.5.0)
 Encoding: UTF-8
 LazyData: true

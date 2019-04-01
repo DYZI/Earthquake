@@ -231,6 +231,6 @@ Following the conclusion of the Coursera Specialization with the submission of t
 However, future plans for use of this package include making an R Shiny app with the `flexdashboard` package, and using this package as an underpinning for making interactive plots and timelines, and posting on my blog.
 
 # Links:
-* [Package earthquake GitHub](https://github.com/ZYDI/Earthquake)
-* [Package fars Travis CI](https://travis-ci.org/ZYDI/Earthquake)
-* [Package Appveyor](https://ci.appveyor.com/project/ZYDI/Earthquake)
+* [Package earthquake GitHub](https://github.com/DYZI/Earthquake)
+* [Package fars Travis CI](https://travis-ci.org/DYZI/Earthquake)
+* [Package Appveyor](https://ci.appveyor.com/project/DYZI/Earthquake)

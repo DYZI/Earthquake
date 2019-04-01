@@ -8,14 +8,16 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+# Package Description
+
+`earthquake` package is a small R package for cleaning, timelining, and mapping 
+[NOAA Significant Earthquake data](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  
+This R package was built to satisfy the requirements of the Capstone project for the [Coursera](http://www.coursera.org) 
+[Mastering Software Development in R](https://www.coursera.org/specializations/r) 5-course specialization.
 
 ```{r echo=FALSE}
-knitr::opts_chunk$set(fig.width = 6, fig.height = 5,
-                      fig.align = 'center')
+knitr::opts_chunk$set(fig.width = 6, fig.height = 5,fig.align = 'center')
 ```
-
-The `earthquake` package is a small R package for cleaning, timelining, and mapping [NOAA Significant Earthquake data](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1).  This R package was built to satisfy the requirements of the Capstone project for the [Coursera](http://www.coursera.org) [Mastering Software Development in R](https://www.coursera.org/specializations/r) 5-course specialization.
-
 ## Installing earthquakr
 
 To install the `earthquake` package, the user must install the `devtools` package.  Then, to download and install the `earthquake` package, use the following commands:

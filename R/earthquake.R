@@ -9,5 +9,5 @@
 #' @importFrom stringr str_trim str_to_title
 #'
 #' @docType package
-#' @name earthquakr
+#' @name earthquake
 NULL

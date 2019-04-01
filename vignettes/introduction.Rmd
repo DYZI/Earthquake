@@ -234,5 +234,5 @@ However, future plans for use of this package include making an R Shiny app with
 
 # Links:
 * [Package earthquake GitHub](https://github.com/DYZI/Earthquake)
-* [Package fars Travis CI](https://travis-ci.org/DYZI/Earthquake)
+* [Package earthquake Travis CI](https://travis-ci.com/DYZI/Earthquake)
 * [Package Appveyor](https://ci.appveyor.com/project/DYZI/Earthquake)

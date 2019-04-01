@@ -1,9 +1,7 @@
 Package: earthquake
-Title: NOAA Significant Earthquake data cleaning, timelining and mapping.
 Version: 0.1.0
 Authors@R: person('ZIDA', email = 'zidnazaire@yahoo.fr', role = c('aut', 'cre'))
-Description: Capstone project for the Coursera: small package for cleaning, timelining, and mapping NOAA Significant Earthquake data. 
-Depends: R (>= 3.5)
+Depends: R (>= 3.5.0)
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true

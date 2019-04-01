@@ -23,6 +23,6 @@ library(earthquake)
 
 ### Vignette
 
-You may read the interactive vignette at my personal blog site, at: http://datawrangl.com/assets/earthquakr-introduction.html.
+You may read the interactive vignette at my personal blog site, at: http://datawrangl.com/assets/earthquake-introduction.html.
 
 Alternatively, read the introduction vignette using the command `vignette('introduction', package = 'earthquake')` after installation.  However, in order to do this, you must build the vignettes when installing, using the command `devtools::install_github('DYZI/Earthquake', build_vignettes = TRUE)`

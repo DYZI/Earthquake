@@ -1,6 +1,6 @@
 #' Earthquake Timeline Theme
 #'
-#' Makes your earthquakr timeline plots look pretty.
+#' Makes your earthquake timeline plots look pretty.
 #'
 #' @param base_size Default \code{11}, base size of text
 #' @param base_family Default \code{sans}, text family

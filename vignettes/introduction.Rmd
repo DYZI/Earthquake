@@ -10,7 +10,7 @@ vignette: >
 ---
 
 ```{r, echo = FALSE, include = FALSE}
-library(RCapstone)
+library(earthquake)
 library(dplyr)
 library(ggplot2)
 library(readr)

@@ -22,13 +22,13 @@ library(earthquake)
 ```
 ### Vignette
 
-You may read the interactive vignette at my personal blog site, at: http://datawrangl.com/assets/earthquake-introduction.html.
+You may read the interactive vignette at my personal blog site, at: https://github.com/DYZI/Earthquake/blob/master/vignettes/introduction.Rmd
 
 Alternatively, read the introduction vignette using the command `vignette('introduction', package = 'earthquake')` after installation.  However, in order to do this, you must build the vignettes when installing, using the command `devtools::install_github('DYZI/Earthquake', build_vignettes = TRUE)`
 
 
 ### Review Criteria
-•	Your package must be hosted on GitHub [GitHub repository](https://github.com/DYZI/Earthquake). 
+•	Your package must be hosted on [GitHub repository](https://github.com/DYZI/Earthquake). 
 You will be providing the URL to your package on GitHub so that other students can evaluate your work.
 
 •	Your package must at least contain the following directories: 

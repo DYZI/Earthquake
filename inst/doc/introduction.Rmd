@@ -39,7 +39,7 @@ library(lubridate)
 
 ## Loading Data
 
-The NOAA Significant Earthquake dataset, as it existed on April 1, 2017, is provided with this package, using the data set name `quakes`.  If you wish to use data updated after this date, please see the dataset documentation (`?earthquake:quakes`) for source.
+The NOAA Significant Earthquake dataset, as it existed on April, 2019, is provided with this package, using the data set name `quakes`.  If you wish to use data updated after this date, please see the dataset documentation (`?earthquake:quakes`) for source.
 
 ### Load and Clean Package Data
 
@@ -66,7 +66,7 @@ tail(quakes)
 
 ### Load and Clean Downloaded Data
 
-If you wish to use NOAA Significant Earthquake data updated after April 1, 2017, please visit the NOAA Significant Earthquakes site at  https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1 and download the data to your working directory. Then you may load and clean data for analysis using the following sequence of commands (replace `filename` with the location of your file):
+If you wish to use NOAA Significant Earthquake data updated after April, 2019, please visit the NOAA Significant Earthquakes site at  https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1 and download the data to your working directory. Then you may load and clean data for analysis using the following sequence of commands (replace `filename` with the location of your file):
 
 ```{r message = FALSE}
 filename <- system.file('extdata', 'earthquakes.txt', package = 'earthquake')
@@ -221,9 +221,3 @@ quakes %>%
   dplyr::mutate(popup_text = eq_create_label(.)) %>%
   eq_map(annot_col = 'popup_text')
 ```
-
-## Future Developments
-
-Following the conclusion of the Coursera Specialization with the submission of this package, I will likely do very little additional development on this package.
-
-However, future plans for use of this package include making an R Shiny app with the `flexdashboard` package, and using this package as an underpinning for making interactive plots and timelines, and posting on my blog.

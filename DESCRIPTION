@@ -1,7 +1,6 @@
 Package: earthquake
 Title: "earthquake: Visualizing NOAA's Significant Earthquakes"
 Version: 0.1.0
-
 Authors@R: person('ZIDA', email = 'zidnazaire@yahoo.fr', role = c('aut', 'cre'))
 Description: This is a small package for cleaning, timelining, and mapping NOAA Significant Earthquake data. It was built to satisfy 
     requirements for the Capstone project for the Coursera Mastering Software Development in R five-course specialization.

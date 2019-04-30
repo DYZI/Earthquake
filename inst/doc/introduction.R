@@ -3,7 +3,7 @@ knitr::opts_chunk$set(fig.width = 6, fig.height = 5,
                       fig.align = 'center')
 
 ## ----eval=FALSE----------------------------------------------------------
-#  devtools::install_github('ZYDI/Earthquake')
+#  devtools::install_github('DYZI/Earthquake')
 #  library(earthquake)
 
 ## ----message = FALSE-----------------------------------------------------

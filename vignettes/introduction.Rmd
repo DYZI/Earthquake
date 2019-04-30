@@ -224,12 +224,6 @@ quakes %>%
   dplyr::mutate(popup_text = eq_create_label(.)) %>%
   eq_map(annot_col = 'popup_text')
 ```
-
-## Future Developments
-Following the conclusion of the Coursera Specialization with the submission of this package, I will likely do very little additional development on this package.
-
-However, future plans for use of this package include making an R Shiny app with the `flexdashboard` package, and using this package as an underpinning for making interactive plots and timelines, and posting on my blog.
-
 # Links:
 * [Package earthquake GitHub](https://github.com/DYZI/Earthquake)
 * [Package earthquake Travis CI](https://travis-ci.org/DYZI/Earthquake)

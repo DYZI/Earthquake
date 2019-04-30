@@ -45,10 +45,12 @@ You will be providing the URL to your package on GitHub so that other students c
 [README.md](https://github.com/DYZI/Earthquake/tree/master/README.md).
 
 •	Every function in your package must have a corresponding [test](https://github.com/DYZI/Earthquake/tree/master/tests)?,
+
 •	Every function in your package must have at least one example in its [documentation](https://github.com/DYZI/Earthquake/tree/master/man).
+
 •	Your package must have a [vignette](https://github.com/DYZI/Earthquake/tree/master/vignettes) which provides an explanation of the purpose for your package and how it could be used. The vignette should include examples for every function that is exported in the package's NAMESPACE file.
-•	A [Travis badge] [![Build Status](https://travis-ci.org/DYZI/Earthquake.svg?branch=master)](https://travis-ci.org/DYZI/Earthquake)
-that says "build pas[Travis badge]sing" that is linked to your package's 
-Travis build should appear at the top of your README.md file on GitHub.
+
+•	A [Travis badge] that says "[![Build Status](https://travis-ci.org/DYZI/Earthquake.svg?branch=master)](https://travis-ci.org/DYZI/Earthquake)" that is linked to your package's. Travis build should appear at the top of your README.md file on GitHub.
+
 •	Your package must be [tested using Travis](https://travis-ci.org/DYZI/Earthquake). There should be no errors, warnings, or notes at the end of your Travis build, and all of your tests should be run on Travis.
 

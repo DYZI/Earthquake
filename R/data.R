@@ -8,7 +8,7 @@
 #'
 #' @format A data frame of 5934 observations of 47 variables.  For variable
 #'   definitions please see the "Event Variable Definitions" link at the url
-#'   below. These data were pulled on April 1, 2017; see source for any updated
+#'   below. These data were pulled on April, 2019; see source for any updated
 #'   data after this date.
 #'
 #' @source National Geophysical Data Center / World Data Service (NGDC/WDS):
